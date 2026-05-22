@@ -1,0 +1,60 @@
+---
+// src/components/sections/ContentImageSection.astro
+
+import content from "../data/sec001.json";
+
+const section = content.sewerRepair;
+---
+
+<section
+  class="w-full bg-[#f5f5f5] py-16 lg:py-20"
+  aria-labelledby="content-section-heading"
+>
+  <div
+    class="mx-auto grid max-w-[1400px] items-center gap-10 px-6 lg:grid-cols-[1.3fr_.9fr] lg:gap-14"
+  >
+    <!-- LEFT CONTENT -->
+    <div class="max-w-[760px]">
+      <!-- Heading -->
+      <h2
+        id="content-section-heading"
+        class="text-3xl leading-[1.15] tracking-[-1px] text-[#1f1f1f] lg:text-5xl"
+      >
+        {section.title}
+      </h2>
+
+      <!-- Paragraphs -->
+      <div
+        class="mt-6 space-y-2 text-[16px] leading-[1.9] text-black"
+      >
+        {section.paragraphs.map((item) => (
+          <p>{item}</p>
+        ))}
+      </div>
+
+      <!-- Button -->
+      <div class="mt-10">
+        <a
+          href={section.button.link}
+          class="inline-flex items-center justify-center bg-[#ff6b1a] px-8 py-4 text-base font-semibold uppercase tracking-wide text-white transition duration-300 hover:bg-[#e55d0d]"
+        >
+          {section.button.label}
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="relative">
+      <div class="overflow-hidden rounded-sm">
+        <img
+          src={section.image}
+          alt={section.title}
+          width="900"
+          height="700"
+          loading="lazy"
+          class="h-[420px] w-full object-cover transition duration-500 hover:scale-105 lg:h-[500px]"
+        />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,85 @@
+---
+// src/components/sections/InteriorWhyChooseSection.astro
+
+import content from "../data/sec015.json";
+
+const section = content.interiorWhyChoose;
+---
+
+<section
+  class="bg-[#f5f5f5] py-16 lg:py-24"
+  aria-labelledby="why-choose-heading"
+>
+  <div class="mx-auto max-w-[1450px] px-6 sm:px-10 lg:px-16">
+
+    <!-- HEADING -->
+    <div class="mx-auto max-w-[820px] text-center">
+      <h2
+        id="why-choose-heading"
+        class="text-3xl leading-[1.08] tracking-[-2px] text-[#111827] sm:text-5xl lg:text-[58px]"
+      >
+        {section.heading}
+
+        <span class="block font-semibold text-[#111827]">
+          {section.highlight}
+        </span>
+      </h2>
+
+      <!-- UNDERLINE -->
+      <div class="mx-auto mt-6 h-[2px] w-[220px] bg-[#111827]"></div>
+    </div>
+
+    <!-- CONTENT -->
+    <div
+      class="mt-16 grid items-start gap-10 lg:grid-cols-[1.08fr_0.92fr]"
+    >
+      
+      <!-- LEFT IMAGE -->
+      <div class="overflow-hidden lg:mt-10">
+        <img
+          src={section.image}
+          alt={section.imageAlt}
+          width="850"
+          height="620"
+          loading="lazy"
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <!-- RIGHT FEATURES -->
+      <div>
+        
+        {section.features.map((item, index) => (
+          <div class="border-b border-[#dddddd] py-7">
+            
+            <!-- TITLE -->
+            <div
+              class="flex items-center gap-4"
+            >
+              <span class="text-[20px] leading-none text-[#222]">
+                →
+              </span>
+
+              <h3
+                class="text-[18px] font-semibold leading-[1.4] text-[#2a2a2a] lg:text-[20px]"
+              >
+                {item.title}
+              </h3>
+            </div>
+
+            <!-- FIRST ACTIVE DESCRIPTION -->
+            {index === 0 && (
+              <div class="pt-4 pl-9">
+                <p
+                  class="max-w-[540px] text-[16px] leading-[1.4] text-[#333333]"
+                >
+                  {item.description}
+                </p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

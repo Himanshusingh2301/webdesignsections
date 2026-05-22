@@ -1,0 +1,37 @@
+
+
+{
+  "sectionLabel": "USE CASES AND APPLICATIONS",
+
+  "slides": [
+    {
+      "title": "Transforming Washrooms",
+      "description": "Transform washrooms with Quensus: cut water bills, automate management, and integrate leak detection for safer, smarter building environments.",
+      "image": "https://cdn.prod.website-files.com/657749fbe6e6884c6503583a/68c1238544c2e56444b33016_657afa84a90b1ef7b95faf18_jacek-dylag-Vve7XkiUq_Y-unsplash.jpg",
+      "button": {
+        "label": "Learn More",
+        "link": "#"
+      }
+    },
+
+    {
+      "title": "Smart Leak Detection",
+      "description": "Monitor water systems in real-time with intelligent leak detection technology for commercial properties.",
+      "image": "https://cdn.prod.website-files.com/657749fbe6e6884c6503583a/68c12373a557d96bde0aeb08_68b962b74459beb8f3eb5ce3_elimende-inagella-n2ZufifTbSo-unsplash.jpg",
+      "button": {
+        "label": "Explore Solution",
+        "link": "#"
+      }
+    },
+
+    {
+      "title": "Commercial Buildings",
+      "description": "Protect large-scale commercial buildings with AI-powered water management and instant alerts.",
+      "image": "https://cdn.prod.website-files.com/657749fbe6e6884c6503583a/68c1235d102f659d9c9367d8_657afbbfed7fa78ae64deec0_ivan-bandura-0-no6ywKMPY-unsplash.jpg",
+      "button": {
+        "label": "View Details",
+        "link": "#"
+      }
+    }
+  ]
+}

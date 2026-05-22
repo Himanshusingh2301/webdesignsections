@@ -1,0 +1,30 @@
+{
+  "healthcareSection": {
+    "subHeading": "Your Path to Exceptional Healthcare",
+    "heading": "We love your loved ones",
+    "description": "Selecting us means choosing excellence. We deliver compassionate care, advanced technology, and a commitment to your holistic well-being.",
+    "image": "https://i.pinimg.com/736x/a2/d1/d6/a2d1d642369375da76ba46499715a891.jpg",
+    "features": [
+      {
+        "title": "100% Safe & Trusted",
+        "description": "Ensuring 100% safety and trust, your health is our priority.",
+        "icon": "https://i.pinimg.com/736x/13/08/2d/13082d0bcb3e0ae09a9bc73dd4b8a194.jpg"
+      },
+      {
+        "title": "Specialist Surgery",
+        "description": "Expert surgeons providing specialized care for optimal surgical outcomes.",
+        "icon": "https://i.pinimg.com/736x/4e/f5/f7/4ef5f78fef659e415eee7594e5f4ecf8.jpg"
+      },
+      {
+        "title": "24/7 take care staff",
+        "description": "Our round-the-clock staff ensures continuous care and support for you.",
+        "icon": "https://i.pinimg.com/736x/39/75/18/397518eb1ed0c358af284540805006ec.jpg"
+      },
+      {
+        "title": "Medicine service",
+        "description": "Comprehensive medicine services, tailored to prioritize and enhance your well-being.",
+        "icon": "https://i.pinimg.com/736x/cc/22/06/cc220675d68573fc76e95dfc4a5ff4e9.jpg"
+      }
+    ]
+  }
+}

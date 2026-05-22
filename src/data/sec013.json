@@ -1,0 +1,21 @@
+{
+  "interiorHero": {
+    "logo": {
+      "text": "purplemedia.store",
+      "link": "/"
+    },
+
+    "image": "https://i.pinimg.com/736x/10/2d/3e/102d3e70193095a407daf233fff34b9a.jpg",
+
+    "imageAlt": "Interior Design Background",
+
+    "heading": "Interior Design In Jaipur: InspireSpaces",
+
+    "description": "From design consultation to turnkey execution — explore a range of plans .",
+
+    "button": {
+      "label": "Book Free Consultation",
+      "link": "/contact"
+    }
+  }
+}

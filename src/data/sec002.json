@@ -1,0 +1,48 @@
+
+
+{
+  "pricingTable": {
+    "title": "How Much Does Sewer Line Repair Cost In Atlanta?",
+
+    "description": "Sewer line repair costs in Atlanta typically range based on length, depth, method, and accessibility:",
+
+    "columns": [
+      "Service",
+      "Typical Atlanta Cost Range"
+    ],
+
+    "rows": [
+      {
+        "service": "Sewer Camera Inspection",
+        "price": "$0–$350 (Free with repair)"
+      },
+
+      {
+        "service": "Hydro Jetting",
+        "price": "$350–$800"
+      },
+
+      {
+        "service": "Spot Repair (Trenchless)",
+        "price": "$1,500–$4,000"
+      },
+
+      {
+        "service": "Full Trenchless Liner (CIPP)",
+        "price": "$4,000–$12,000"
+      },
+
+      {
+        "service": "Pipe Bursting Replacement",
+        "price": "$6,000–$15,000"
+      },
+
+      {
+        "service": "Full Traditional Excavation",
+        "price": "$7,000–$25,000+"
+      }
+    ],
+
+    "note": "Actual cost depends on your home’s specific situation. We provide free, no-obligation written estimates after camera inspection."
+  }
+}

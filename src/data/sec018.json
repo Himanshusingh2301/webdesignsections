@@ -1,0 +1,104 @@
+{
+  "garageDoorSection": {
+    "pricing": {
+      "subHeading": "2026 UK PRICING",
+
+      "heading": "What Does a New Garage Door Cost in the ",
+
+      "highlight": "UK?",
+
+      "description": "The UK average for a professionally installed garage door sits around £850. Most homeowners spend between £500 and £1,200, while full projects range from £800 to £3,500.",
+
+      "leftTitle": "Price Ranges by Door Type",
+
+      "rightTitle": "What Drives the Price?",
+
+      "priceCards": [
+        {
+          "title": "Single Steel (Non-Insulated)",
+          "materials": "Materials: £400 – £800",
+          "price": "£700 – £1,200",
+          "note": "Fully installed inc. VAT",
+          "popular": false
+        },
+
+        {
+          "title": "Single Steel (Insulated)",
+          "materials": "Materials: £650 – £1,300",
+          "price": "£950 – £1,750",
+          "note": "Fully installed inc. VAT",
+          "popular": true
+        },
+
+        {
+          "title": "Double Steel (Non-Insulated)",
+          "materials": "Materials: £750 – £1,500",
+          "price": "£1,100 – £2,000",
+          "note": "Fully installed inc. VAT",
+          "popular": false
+        },
+
+        {
+          "title": "Double Steel (Insulated)",
+          "materials": "Materials: £1,100 – £2,200+",
+          "price": "£1,500 – £2,800+",
+          "note": "Fully installed inc. VAT",
+          "popular": false
+        }
+      ],
+
+      "infoCards": [
+        {
+          "title": "Installation Labour",
+          "description": "Covers removal, fitting, hardware, and post-install balance check. UK rates typically £60–£95/hr.",
+          "badge": "£250 – £500"
+        },
+
+        {
+          "title": "Door & Hardware",
+          "description": "Entry-level steel starts lowest. Timber, composite, or full-view glass can reach £6,000+.",
+          "badge": "£400 – £2,200+"
+        },
+
+        {
+          "title": "Insulation Rating",
+          "description": "British winters demand proper insulation. An insulated door cuts heat loss and energy bills year-round.",
+          "badge": "Recommended"
+        },
+
+        {
+          "title": "VAT & Permits",
+          "description": "Standard UK VAT applies at 20%. Building regs approval may be needed for structural changes.",
+          "badge": "20% VAT"
+        }
+      ]
+    },
+
+    "banner": {
+      "averageLabel": "UK NATIONAL AVERAGE 2026",
+
+      "price": "£850",
+
+      "description": "Typical spend £500 – £1,200 · Premium custom doors can exceed £5,000",
+
+      "button": {
+        "label": "GET FREE QUOTE",
+        "link": "#"
+      },
+
+      "guaranteeTitle": "Our Pricing Guarantees",
+
+      "guarantees": [
+        "Transparent fixed-price quotes",
+        "No hidden fees or call-out charges",
+        "Price matched if you find cheaper",
+        "All prices include VAT"
+      ],
+
+      "bottomLink": {
+        "label": "Full 2026 Cost Breakdown",
+        "link": "#"
+      }
+    }
+  }
+}

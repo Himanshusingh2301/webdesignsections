@@ -1,0 +1,32 @@
+{
+  "medicalHero": {
+    "topBar": {
+      "text": "Contact us for emergency services, available 24/7. Your well-being matters.",
+      "linkLabel": "Connect Now",
+      "link": "/contact"
+    },
+
+    "subtitle": "Empowering Health with Expert Medical Care",
+
+    "headingFirst": "Caring for",
+
+    "headingSecond": "Your Well-being",
+
+    "description": "Pioneering healthcare excellence with cutting-edge technology, compassionate professionals, and personalized care for optimal well-being.",
+
+    "images": [
+      "https://i.pinimg.com/1200x/82/2c/50/822c5064c7d7cb14d1a6ed23a6046400.jpg",
+      "https://thumbs.dreamstime.com/b/asian-health-care-…l-concepts-isolated-white-background-36266798.jpg"
+    ],
+
+    "callButton": {
+      "label": "Call Now",
+      "number": "+911234567890"
+    },
+
+    "secondaryButton": {
+      "label": "Book Appointment",
+      "link": "/appointment"
+    }
+  }
+}

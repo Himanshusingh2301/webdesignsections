@@ -1,0 +1,90 @@
+---
+// src/components/sections/HospitalAboutSection.astro
+
+import content from "../data/sec008.json";
+
+const section = content.hospitalAbout;
+---
+
+<section
+  class="relative overflow-hidden bg-[#f4f7f6] py-16 lg:py-20"
+  aria-labelledby="hospital-about-heading"
+>
+  <div
+    class="mx-auto grid max-w-[1500px] items-center gap-12 px-6 sm:px-10 lg:grid-cols-2 lg:px-16"
+  >
+    
+    <!-- LEFT IMAGES -->
+    <div class="relative mx-auto h-[500px] w-full max-w-[720px]">
+      
+      <!-- TOP BIG IMAGE -->
+      <div
+        class="absolute left-0 top-0 overflow-hidden rounded-[14px]"
+      >
+        <img
+          src={section.images.mainTop}
+          alt="Hospital Image 1"
+          width="380"
+          height="300"
+          loading="lazy"
+          class="h-[300px] w-[380px] object-cover"
+        />
+      </div>
+
+      <!-- SMALL TOP IMAGE -->
+      <div
+        class="absolute right-10 top-10 overflow-hidden rounded-[14px] bg-white p-2 shadow-lg"
+      >
+        <img
+          src={section.images.smallTop}
+          alt="Hospital Image 2"
+          width="170"
+          height="170"
+          loading="lazy"
+          class="h-[170px] w-[170px] rounded-[10px] object-cover"
+        />
+      </div>
+
+      <!-- BOTTOM BIG IMAGE -->
+      <div
+        class="absolute bottom-0 left-[220px] overflow-hidden rounded-[14px]"
+      >
+        <img
+          src={section.images.bottomImage}
+          alt="Hospital Image 3"
+          width="420"
+          height="320"
+          loading="lazy"
+          class="h-[320px] w-[420px] object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="relative z-10">
+      
+      <!-- HEADING -->
+      <h2
+        id="hospital-about-heading"
+        class="max-w-[700px] text-3xl leading-[1.15] tracking-[-1px] text-[#01535a] sm:text-5xl lg:text-4xl"
+      >
+        {section.heading}
+
+        <span class="text-[#567b67]">
+          {section.highlight}
+        </span>
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <div
+        class="mt-6 space-y-4 text-[16px] leading-[2] text-[#6d7682]"
+      >
+        <p set:html={section.descriptionOne}></p>
+
+        <p>
+          {section.descriptionTwo}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

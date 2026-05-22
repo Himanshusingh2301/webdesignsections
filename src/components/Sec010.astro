@@ -1,0 +1,83 @@
+---
+// src/components/sections/HealthcareAboutSection.astro
+
+import content from "../data/sec010.json";
+
+const section = content.healthcareSection;
+---
+
+<section class="relative overflow-hidden bg-white py-14">
+  <!-- Dotted Background -->
+  <div class="absolute inset-0 opacity-40 pointer-events-none">
+    <div class="absolute left-0 top-0 h-full w-[35%] bg-[radial-gradient(#9be7f0_1.5px,transparent_1.5px)] [background-size:18px_18px]"></div>
+
+    <div class="absolute right-0 top-0 h-full w-[15%] bg-[radial-gradient(#d9dee7_2px,transparent_2px)] [background-size:24px_24px]"></div>
+  </div>
+
+  <!-- 70% Width Container -->
+  <div class="relative z-10 mx-auto w-[70%]">
+    <div class="grid items-center gap-10 lg:grid-cols-2">
+      
+      <!-- Left Content -->
+      <div>
+        <!-- Small Heading -->
+        <span class="font-[cursive] text-[26px] text-[#5d7f72]">
+          {section.subHeading}
+        </span>
+
+        <!-- Main Heading -->
+        <h2
+          class="mt-2 max-w-[500px] text-4xl font-bold leading-[1] text-[#004d57] md:text-6xl"
+        >
+          {section.heading}
+        </h2>
+
+        <!-- Description -->
+        <p
+          class="mt-5 max-w-[600px] text-[15px] leading-[1.8] text-[#8a8f96]"
+        >
+          {section.description}
+        </p>
+
+        <!-- Features -->
+        <div class="mt-10 grid gap-y-8 gap-x-6 md:grid-cols-2">
+          {section.features.map((item) => (
+            <div class="flex items-start gap-4">
+              
+              <!-- Icon -->
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center">
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  class="h-10 w-10 object-contain"
+                />
+              </div>
+
+              <!-- Text -->
+              <div>
+                <h3 class="text-[18px] font-semibold text-[#004d57]">
+                  {item.title}
+                </h3>
+
+                <p
+                  class="mt-2 text-[14px] leading-[1.7] text-[#8a8f96]"
+                >
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="relative">
+        <img
+          src={section.image}
+          alt="Healthcare Family"
+          class="h-[520px] w-full max-w-[620px] object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>

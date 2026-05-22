@@ -1,0 +1,170 @@
+---
+// src/components/sections/AppointmentSection.astro
+
+import content from "../data/sec012.json";
+
+const section = content.appointmentSection;
+---
+
+<section class="relative overflow-hidden py-10">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img
+      src={section.backgroundImage}
+      alt="Background"
+      class="h-full w-full object-cover"
+    />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-white/70"></div>
+  </div>
+
+  <!-- 65% Width Container -->
+  <div class="relative z-10 mx-auto w-[65%]">
+    <div class="grid overflow-hidden bg-[#f6f6f6] shadow-[0_10px_40px_rgba(0,0,0,0.08)] lg:grid-cols-2">
+      
+      <!-- Left Content -->
+      <div class="px-8 py-8">
+        
+        <!-- Heading -->
+        <h2
+          class="max-w-[390px] text-3xl font-bold leading-[1.15] text-[#004d57] md:text-5xl"
+        >
+          {section.heading}
+        </h2>
+
+        <!-- Description -->
+        <p
+          class="mt-5 max-w-[460px] text-[14px] leading-[1.8] text-[#8a8f96]"
+        >
+          {section.description}
+        </p>
+
+        <!-- Features -->
+        <div class="mt-7 grid gap-y-5 md:grid-cols-2">
+          {section.features.map((item) => (
+            <div class="flex items-center gap-3">
+              
+              <!-- Check Icon -->
+              <div
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-[#4f7562] text-xs text-white"
+              >
+                ✓
+              </div>
+
+              <span class="text-[15px] text-[#004d57]">
+                {item}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Right Form -->
+      <div class="bg-[#f6f6f6]">
+        
+        <!-- Form Top -->
+        <div class="flex items-center justify-between bg-[#4f7562] px-8 py-6">
+          <div>
+            <h3 class="text-2xl font-bold text-white">
+              {section.form.title}
+            </h3>
+
+            <p class="mt-1 text-[14px] text-white/80">
+              {section.form.subtitle}
+            </p>
+          </div>
+
+          <!-- Phone Circle -->
+          <div
+            class="flex h-16 w-16 items-center justify-center rounded-full border-[4px] border-[#2ea8b8]"
+          >
+            <span class="text-2xl text-white">☎</span>
+          </div>
+        </div>
+
+        <!-- Form Inputs -->
+        <div class="px-8 py-8">
+          <div class="grid gap-5 md:grid-cols-2">
+            
+            <!-- Name -->
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="h-[52px] w-full rounded-full border border-[#d9dee4] bg-transparent pl-6 pr-14 text-[14px] outline-none"
+              />
+
+              <span
+                class="absolute right-5 top-1/2 -translate-y-1/2 text-[18px] text-[#4f7562]"
+              >
+                👤
+              </span>
+            </div>
+
+            <!-- Message -->
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Text To Write"
+                class="h-[52px] w-full rounded-full border border-[#d9dee4] bg-transparent pl-6 pr-14 text-[14px] outline-none"
+              />
+
+              <span
+                class="absolute right-5 top-1/2 -translate-y-1/2 text-[18px] text-[#4f7562]"
+              >
+                ✎
+              </span>
+            </div>
+
+            <!-- Phone -->
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                class="h-[52px] w-full rounded-full border border-[#d9dee4] bg-transparent pl-6 pr-14 text-[14px] outline-none"
+              />
+
+              <span
+                class="absolute right-5 top-1/2 -translate-y-1/2 text-[18px] text-[#4f7562]"
+              >
+                ☎
+              </span>
+            </div>
+
+            <!-- Date -->
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Appointment Date"
+                class="h-[52px] w-full rounded-full border border-[#d9dee4] bg-transparent pl-6 pr-14 text-[14px] outline-none"
+              />
+
+              <span
+                class="absolute right-5 top-1/2 -translate-y-1/2 text-[18px] text-[#4f7562]"
+              >
+                📅
+              </span>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="mt-7 flex justify-center">
+            <button
+              class="flex items-center gap-3 rounded-full bg-[#4f7562] px-7 py-3 text-[16px] font-semibold text-white transition duration-300 hover:bg-[#3e5f50]"
+            >
+              <!-- Calendar Circle -->
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-full border-[3px] border-[#b7edf5] bg-[#4f7562]"
+              >
+                📅
+              </span>
+
+              {section.form.buttonText}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

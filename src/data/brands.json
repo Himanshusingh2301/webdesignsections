@@ -1,0 +1,38 @@
+
+
+{
+  "trustedBrands": {
+    "brands": [
+      {
+        "name": "Berkeley Group",
+        "logo": "https://cdn.prod.website-files.com/6567145603fdea394a6dad34/6577418922f3f898f086da05_Artboard%201%20copy%2010.webp",
+        "link": "#"
+      },
+      {
+        "name": "Luton Borough Council",
+        "logo": "https://cdn.prod.website-files.com/6567145603fdea394a6dad34/6577418951551751a858f65b_Artboard%201%20copy%204.webp",
+        "link": "#"
+      },
+      {
+        "name": "Battersea Power Station",
+        "logo": "https://cdn.prod.website-files.com/6567145603fdea394a6dad34/6577418835d291eb1c06f72f_Artboard%201%20copy%206.webp",
+        "link": "#"
+      },
+      {
+        "name": "Heathrow",
+        "logo": "https://cdn.prod.website-files.com/6567145603fdea394a6dad34/65774189b8579b9106aa5c02_Artboard%201%20copy%207.webp",
+        "link": "#"
+      },
+      {
+        "name": "Bristol Water",
+        "logo": "https://cdn.prod.website-files.com/6567145603fdea394a6dad34/6577418969d678e2b78df33d_Artboard%201%20copy%209.webp",
+        "link": "#"
+      },
+      {
+        "name": "Polygon",
+        "logo": "https://cdn.prod.website-files.com/6567145603fdea394a6dad34/657741898bf824726f3ede1a_Artboard%201%20copy%2012.webp",
+        "link": "#"
+      }
+    ]
+  }
+}

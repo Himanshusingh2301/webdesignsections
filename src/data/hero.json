@@ -1,0 +1,22 @@
+
+{
+  "riskMitigation": {
+    "title": "Mitigate Risk with Quensus",
+    "image": "https://cdn.prod.website-files.com/6567145603fdea394a6dad34/6577405645b21e8ab2c5eb74_Flooded%20apartment%20(8).webp",
+    "paragraphs": [
+      "Founded in 2015, Quensus has rapidly evolved into a <strong>key industry leader</strong>, delivering bespoke, comprehensive solutions for leak detection and water risk mitigation.",
+
+      "Backed by <strong>over a decade</strong> of dedication and a team of highly qualified engineers, we’ve developed AI-powered <strong>cutting-edge technology</strong> that enables real-time water monitoring, instant leak alerts, and automatic shutoff.",
+
+      "By preventing leaks, we help <strong>avoid costly damage, conserve water, and cut water bills</strong> up to 60%. We help you create dry, leak-free spaces that improve living conditions and offer peace of mind."
+    ],
+    "primaryButton": {
+      "label": "Learn More About Quensus",
+      "link": "#"
+    },
+    "secondaryButton": {
+      "label": "Browse Our Solutions",
+      "link": "#"
+    }
+  }
+}

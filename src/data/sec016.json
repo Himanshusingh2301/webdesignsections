@@ -1,0 +1,56 @@
+{
+  "garageDoorServices": {
+    "subtitle": "OUR EXPERTISE",
+    "heading": "Professional Garage Door",
+    "highlight": "Solutions",
+    "description": "From broken springs to full installations — we handle it all with same-day availability across the UK.",
+
+    "primaryButton": {
+      "label": "Book Garage Door Repair",
+      "link": "/contact"
+    },
+
+    "secondaryButton": {
+      "label": "View All Services",
+      "link": "/services"
+    },
+
+    "services": [
+      {
+        "title": "Spring Repair",
+        "description": "Torsion & extension spring replacement by qualified engineers. Most jobs completed within 90 minutes.",
+        "image": "https://i.pinimg.com/736x/5b/93/d0/5b93d073101498cd217b9a461530519f.jpg",
+        "imageAlt": "Garage Door Spring Repair",
+        "badge": "Most Popular",
+        "link": "/services/spring-repair"
+      },
+
+      {
+        "title": "Opener Repair",
+        "description": "Belt, chain & screw drive opener diagnostics, repair and replacement — all major brands covered.",
+        "image": "https://i.pinimg.com/736x/80/66/1f/80661f5e7b6d52f875029de6dfbb139b.jpg",
+        "imageAlt": "Garage Door Opener Repair",
+        "badge": "",
+        "link": "/services/opener-repair"
+      },
+
+      {
+        "title": "New Installation",
+        "description": "Steel, timber & insulated sectional doors supplied and fitted. Measured, ordered and installed within the week.",
+        "image": "https://i.pinimg.com/1200x/15/c1/49/15c14908b9ee00ecf3083fa6ed24acce.jpg",
+        "imageAlt": "New Garage Door Installation",
+        "badge": "",
+        "link": "/services/new-installation"
+      },
+
+      {
+        "title": "Emergency Service",
+        "description": "24/7 emergency callouts — evenings, weekends and bank holidays. Engineer dispatched within the hour.",
+        "image": "https://i.pinimg.com/736x/eb/54/3f/eb543fa6b5db346d4a221af44cd4e774.jpg",
+        "imageAlt": "Emergency Garage Door Service",
+        "badge": "24/7",
+        "link": "/services/emergency-service"
+      }
+    ]
+  }
+}

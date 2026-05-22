@@ -1,0 +1,16 @@
+{
+  "hospitalAbout": {
+    "heading": "Best Hospital in Lucknow ",
+    "highlight": "for Complete Medical Care",
+    
+    "descriptionOne": "Dr. KNS Memorial Hospital is one of the best multispeciality hospitals in Lucknow, which provides full, quality, and caring services in a single location. The institution is a recognized <strong>top hospital in Lucknow</strong> and it is dedicated to medical excellence, patient safety and high quality treatment protocols.",
+
+    "descriptionTwo": "The hospital has modern infrastructure, qualified professionals and advanced diagnostic equipment which makes sure that all patients are positively diagnosed and treated. Being a multispeciality hospital near you, it is a combination of medical knowledge and empathy and is the best hospital in Lucknow related to holistic well being and quality medical care.",
+
+    "images": {
+      "mainTop": "https://etimg.etb2bimg.com/thumb/msid-104173218,width-1200,height-900,resizemode-4/.jpg",
+      "bottomImage": "https://i.pinimg.com/736x/96/dc/f4/96dcf410c4a8067644bdad7c7ecf2b1f.jpg",
+      "smallTop": "https://i.pinimg.com/736x/92/f8/95/92f895df8f136c54a7fbb12843533e72.jpg"
+    }
+  }
+}

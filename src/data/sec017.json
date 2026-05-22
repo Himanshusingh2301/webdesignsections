@@ -1,0 +1,35 @@
+{
+  "garageDoorAbout": {
+    "heading": "TRUSTED GARAGE DOOR SPECIALISTS WITH ",
+    "highlight": "20 YEARS OF EXPERIENCE",
+
+    "description": "For over two decades, we have been delivering reliable and high-quality garage door services to homeowners across the United Kingdom. Whether you need a new installation, urgent repairs, or routine maintenance, our skilled engineers are committed to outstanding results — treating every property as if it were their own.",
+
+    "image": "https://fastergaragedoorrepair.co.uk/assets/team-photo-DCk6GD5b.jpg",
+    "imageAlt": "Garage Door Team",
+
+    "badge": {
+      "number": "20+",
+      "textOne": "YEARS IN",
+      "textTwo": "THE TRADE"
+    },
+
+    "features": [
+      "Courteous, Vetted & DBS-Checked Engineers",
+      "Upfront Quotes Before Any Work Begins",
+      "480+ Five-Star Reviews Nationwide",
+      "Commercial-Grade Parts on Every Van",
+      "Rapid Response — Often Within 60 Minutes"
+    ],
+
+    "primaryButton": {
+      "label": "REQUEST YOUR FREE QUOTE",
+      "link": "#"
+    },
+
+    "phoneButton": {
+      "label": "0800 123 4567",
+      "number": "08001234567"
+    }
+  }
+}

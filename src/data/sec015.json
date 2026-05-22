@@ -1,0 +1,31 @@
+{
+  "interiorWhyChoose": {
+    "heading": "Why Choose Our Jaipur Interior",
+    "highlight": "Design Solutions",
+    "image": "https://i.pinimg.com/736x/79/de/bc/79debc6238423d8ff3e61c9b363044b3.jpg",
+    "imageAlt": "Interior Design Kitchen",
+    "features": [
+      {
+        "title": "Smart Planning",
+        "description": ""
+      },
+      {
+        "title": "Affordable Solutions",
+        "description": ""
+      },
+      {
+        "title": "Consultative Approach",
+        "description": ""
+      },
+      {
+        "title": "Bespoke Solutions",
+        "description": ""
+      },
+      {
+        "title": "Tech-Driven Design Process",
+        "description": ""
+    
+      }
+    ]
+  }
+}

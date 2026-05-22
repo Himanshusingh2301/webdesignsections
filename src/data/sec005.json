@@ -1,0 +1,104 @@
+
+
+{
+  "kidsHero": {
+    "brand": "KinderKid",
+
+    "logo": "/images/logo.svg",
+
+    "logoAlt": "KinderKid Logo",
+
+    "navItems": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+
+      {
+        "label": "School",
+        "link": "/school"
+      },
+
+      {
+        "label": "Program",
+        "link": "/program"
+      },
+
+      {
+        "label": "About Us",
+        "link": "/about"
+      },
+
+      {
+        "label": "Gallery",
+        "link": "/gallery"
+      }
+    ],
+
+    "contactButton": {
+      "label": "Contact Us",
+      "link": "/contact"
+    },
+
+    "heading": "Where Little Explorers Begin Their Big Adventures!",
+
+    "primaryButton": {
+      "label": "Get Started",
+      "link": "/start"
+    },
+
+    "secondaryButton": {
+      "label": "Learn More",
+      "link": "/about"
+    },
+
+    "stats": {
+      "number": "600+",
+
+      "text": "Successful graduation of over 600 happy and accomplished students",
+
+      "avatars": [
+        "/images/avatar-1.jpg",
+        "/images/avatar-2.jpg",
+        "/images/avatar-3.jpg",
+        "/images/avatar-4.jpg",
+        "/images/avatar-5.jpg"
+      ]
+    },
+
+    "description": "A World of Wonder in KinderKid Offers a Playful, Nurturing Environment Where Curiosity Flourishes, Friendships Blossom, and Every Child Thrives.",
+
+    "tags": [
+      {
+        "label": "Diversity and Individuality",
+        "color": "bg-[#8d7ce7]"
+      },
+
+      {
+        "label": "Nurturing Growth",
+        "color": "bg-[#f0a53a]"
+      },
+
+      {
+        "label": "Collaboration Partnering",
+        "color": "bg-[#8fcf8a]"
+      },
+
+      {
+        "label": "Reach Potential",
+        "color": "bg-[#28d4d0]"
+      }
+    ],
+
+    "image": "/images/kid.png",
+
+    "imageAlt": "Happy child holding books",
+
+    "decorations": {
+      "smile": "/images/smile.svg",
+      "house": "/images/house.svg",
+      "arrow": "/images/arrow.svg",
+      "paperPlane": "/images/paper-plane.svg"
+    }
+  }
+}

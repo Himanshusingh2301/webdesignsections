@@ -1,0 +1,19 @@
+{
+  "appointmentSection": {
+    "backgroundImage": "https://i.pinimg.com/1200x/82/2c/50/822c5064c7d7cb14d1a6ed23a6046400.jpg",
+    "heading": "Connect with Wellness Experts at Your Fingertips",
+    "description": "Reach out for inquiries, appointments, or emergencies. Our dedicated team is ready to assist you with compassionate care.",
+    "features": [
+      "Oncology",
+      "Neurology",
+      "Cardiology",
+      "General Surgery",
+      "Medical Care"
+    ],
+    "form": {
+      "title": "Book An Appointment",
+      "subtitle": "Please Call Us To Ensure Booking",
+      "buttonText": "Make Appointment"
+    }
+  }
+}

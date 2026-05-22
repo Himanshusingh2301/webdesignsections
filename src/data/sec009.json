@@ -1,0 +1,24 @@
+{
+  "specializedDepartments": {
+    "heading": "Specialized Departments",
+    "description": "Comprehensive healthcare solutions tailored to your needs, with expert care across diverse medical disciplines.",
+    "backgroundImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH6dR2oPWgHgASosbs_F9GWD7zyzW26N3xmQ&s",
+    "departments": [
+      {
+        "title": "Neurology",
+        "description": "Advanced neurological care for disorders, providing expert diagnosis and personalized treatment plans.",
+        "icon": "/icons/brain.svg"
+      },
+      {
+        "title": "Surgery",
+        "description": "Cutting-edge surgical solutions, led by skilled surgeons committed to your successful recovery and well-being.",
+        "icon": "/icons/surgery.svg"
+      },
+      {
+        "title": "Cardiology",
+        "description": "Heart health expertise, offering diagnostics, interventions, and compassionate care for optimal cardiac well-being.",
+        "icon": "/icons/medical.svg"
+      }
+    ]
+  }
+}

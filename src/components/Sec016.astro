@@ -1,0 +1,138 @@
+---
+// src/components/sections/GarageDoorServicesSection.astro
+
+import content from "../data/sec016.json";
+
+const section = content.garageDoorServices;
+---
+
+<section
+  class="relative overflow-hidden bg-[#0f3566] py-16 lg:py-24"
+  aria-labelledby="garage-services-heading"
+>
+  <!-- BACKGROUND DOTS -->
+  <div
+    class="absolute inset-0 opacity-[0.08]"
+    style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 32px 32px;"
+  ></div>
+
+  <div class="relative z-10 mx-auto max-w-[1700px] px-6 sm:px-10 lg:px-16">
+    
+    <!-- TOP CONTENT -->
+    <div class="mx-auto max-w-[900px] text-center">
+      
+      <!-- SUBTITLE -->
+      <span
+        class="text-[14px] font-semibold uppercase tracking-[4px] text-white/70"
+      >
+        {section.subtitle}
+      </span>
+
+      <!-- HEADING -->
+      <h2
+        id="garage-services-heading"
+        class="mt-4 text-4xl font-extrabold leading-[1.1] tracking-[-2px] text-white sm:text-5xl lg:text-[64px]"
+      >
+        {section.heading}
+
+        <span class="text-[#e10600]">
+          {section.highlight}
+        </span>
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <p
+        class="mx-auto mt-6 max-w-[760px] text-[18px] leading-[1.8] text-white/70"
+      >
+        {section.description}
+      </p>
+    </div>
+
+    <!-- CARDS -->
+    <div
+      class="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-4"
+    >
+      {section.services.map((item) => (
+        <article
+          class="group relative overflow-hidden rounded-[26px] bg-[#132f55]"
+        >
+          
+          <!-- IMAGE -->
+          <img
+            src={item.image}
+            alt={item.imageAlt}
+            width="500"
+            height="700"
+            loading="lazy"
+            class="h-[520px] w-full object-cover transition duration-500 group-hover:scale-105"
+          />
+
+          <!-- DARK OVERLAY -->
+          <div class="absolute inset-0 bg-black/45"></div>
+
+          <!-- BOTTOM GRADIENT -->
+          <div
+            class="absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-black via-black/60 to-transparent"
+          ></div>
+
+          <!-- BADGE -->
+          {item.badge && (
+            <div
+              class="absolute left-5 top-5 rounded-full bg-[#e10600] px-5 py-2 text-[13px] font-bold uppercase tracking-[0.5px] text-white"
+            >
+              {item.badge}
+            </div>
+          )}
+
+          <!-- CONTENT -->
+          <div
+            class="absolute bottom-0 left-0 z-10 w-full p-8"
+          >
+            <h3
+              class="text-[22px] font-bold text-white"
+            >
+              {item.title}
+            </h3>
+
+            <p
+              class="mt-4 text-[16px] leading-[1.8] text-white/75"
+            >
+              {item.description}
+            </p>
+
+            <!-- LINK -->
+            <a
+              href={item.link}
+              class="mt-8 inline-flex items-center gap-3 text-[15px] font-bold uppercase tracking-[1px] text-[#ff1a1a] transition duration-300 hover:gap-5"
+            >
+              Learn More
+
+              <span class="text-[18px]">
+                →
+              </span>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <!-- BOTTOM BUTTONS -->
+    <div
+      class="mt-14 flex flex-wrap items-center justify-center gap-6"
+    >
+      <a
+        href={section.primaryButton.link}
+        class="inline-flex min-h-[60px] items-center justify-center rounded-[12px] bg-[#e10600] px-10 text-[16px] font-semibold text-white transition duration-300 hover:bg-[#c50500]"
+      >
+        {section.primaryButton.label}
+      </a>
+
+      <a
+        href={section.secondaryButton.link}
+        class="inline-flex min-h-[60px] items-center justify-center rounded-[12px] border border-white/20 bg-transparent px-10 text-[16px] font-semibold text-white transition duration-300 hover:bg-white hover:text-[#0f3566]"
+      >
+        {section.secondaryButton.label}
+      </a>
+    </div>
+  </div>
+</section>

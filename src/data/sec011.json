@@ -1,0 +1,28 @@
+{
+  "commitmentSection": {
+    "subHeading": "Medical & General Care!",
+    "heading": "Our Commitment to Excellence",
+    "description": "Explore the quantifiable impact of Dr. KNS Memorial Hospital through our vital health metrics. From patient satisfaction rates and successful treatment outcomes to swift emergency response times, our numbers tell a story of unwavering dedication to your well-being. Trust in our commitment to deliver top-tier healthcare services, supported by data that reflects our passion for excellence and your satisfaction. Your health, measured in our commitment and quality care.",
+    "backgroundImage": "https://i.pinimg.com/736x/82/2c/50/822c5064c7d7cb14d1a6ed23a6046400.jpg",
+    "stats": [
+      {
+        "number": "30+",
+        "title": "Years Of Experience",
+        "description": "Decades honing expertise, ensuring unparalleled healthcare excellence for every patient.",
+        "icon": "https://i.pinimg.com/736x/00/07/6f/00076fb0f68ca2df5787a13f2538618c.jpg"
+      },
+      {
+        "number": "35+",
+        "title": "Experienced Doctor's",
+        "description": "Skilled, seasoned professionals dedicated to your well-being and optimal health outcomes.",
+        "icon": "https://i.pinimg.com/736x/a5/c0/d9/a5c0d9c1fb575bb7daf8b8347f5ccf19.jpg"
+      },
+      {
+        "number": "75000+",
+        "title": "Happy Patients",
+        "description": "Satisfied smiles, testimony to our compassionate care and successful treatment journeys.",
+        "icon": "https://i.pinimg.com/736x/0b/03/ed/0b03ed7b1818b2c63533754c404b25ff.jpg"
+      }
+    ]
+  }
+}

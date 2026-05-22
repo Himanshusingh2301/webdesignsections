@@ -1,0 +1,188 @@
+---
+// src/components/sections/KidsHeroSection.astro
+
+import content from "../data/sec005.json";
+
+const section = content.kidsHero;
+---
+
+<section
+  class="relative overflow-hidden bg-[#dff0da] py-10 lg:py-16"
+  aria-labelledby="kids-hero-heading"
+>
+  <!-- Outer Container -->
+  <div
+    class="mx-auto max-w-[1500px] rounded-[40px] bg-[#d9edd2] p-5 lg:p-10"
+  >
+    <!-- White Card -->
+    <div
+      class="rounded-[28px] bg-white px-6 py-8 shadow-[0_20px_60px_rgba(0,0,0,0.08)] lg:px-10 lg:py-10"
+    >
+      <!-- Navbar -->
+      <div
+        class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img
+            src={section.logo}
+            alt={section.logoAlt}
+            class="h-10 w-auto object-contain"
+          />
+
+          <span class="text-2xl font-semibold text-[#1d1d1d]">
+            {section.brand}
+          </span>
+        </div>
+
+        <!-- Nav -->
+        <nav
+          class="flex flex-wrap items-center justify-center gap-8 text-[16px] text-[#666]"
+        >
+          {section.navItems.map((item) => (
+            <a
+              href={item.link}
+              class="transition duration-300 hover:text-black"
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        <!-- CTA -->
+        <a
+          href={section.contactButton.link}
+          class="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition duration-300 hover:opacity-90"
+        >
+          {section.contactButton.label}
+        </a>
+      </div>
+
+      <!-- HERO CONTENT -->
+      <div
+        class="mt-14 grid items-center gap-16 lg:grid-cols-[1fr_.95fr]"
+      >
+        <!-- LEFT -->
+        <div>
+          <!-- Heading -->
+          <h1
+            id="kids-hero-heading"
+            class="max-w-3xl text-5xl font-semibold leading-[1.05] tracking-[-2px] text-[#111] lg:text-7xl"
+          >
+            {section.heading}
+          </h1>
+
+          <!-- Buttons -->
+          <div class="mt-10 flex flex-wrap gap-5">
+            <a
+              href={section.primaryButton.link}
+              class="inline-flex items-center justify-center rounded-full bg-[#9ad48f] px-8 py-4 text-[16px] font-medium text-white transition duration-300 hover:scale-105"
+            >
+              {section.primaryButton.label}
+            </a>
+
+            <a
+              href={section.secondaryButton.link}
+              class="inline-flex items-center justify-center rounded-full border border-[#d8d8d8] bg-white px-8 py-4 text-[16px] font-medium text-[#222] transition duration-300 hover:bg-[#f5f5f5]"
+            >
+              {section.secondaryButton.label}
+            </a>
+          </div>
+
+          <!-- Bottom Content -->
+          <div
+            class="mt-12 grid gap-8 lg:grid-cols-[260px_1fr]"
+          >
+            <!-- Black Card -->
+            <div
+              class="rounded-[24px] bg-[#0f0f0f] p-6 text-white"
+            >
+              <h3 class="text-5xl font-bold">
+                {section.stats.number}
+              </h3>
+
+              <p
+                class="mt-4 text-[15px] leading-[1.7] text-[#d8d8d8]"
+              >
+                {section.stats.text}
+              </p>
+
+              <!-- Avatars -->
+              <div class="mt-6 flex -space-x-3">
+                {section.stats.avatars.map((avatar) => (
+                  <img
+                    src={avatar}
+                    alt="Student"
+                    class="h-12 w-12 rounded-full border-2 border-white object-cover"
+                  />
+                ))}
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div>
+              <p
+                class="text-[18px] leading-[2] text-[#666]"
+              >
+                {section.description}
+              </p>
+
+              <!-- Tags -->
+              <div class="mt-8 flex flex-wrap gap-4">
+                {section.tags.map((tag) => (
+                  <span
+                    class={`rounded-full px-5 py-3 text-[14px] font-medium text-white ${tag.color}`}
+                  >
+                    {tag.label}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="relative flex justify-center">
+          <!-- Main Image -->
+          <div
+            class="relative overflow-hidden rounded-[40px] bg-[#f1b04d]"
+          >
+            <img
+              src={section.image}
+              alt={section.imageAlt}
+              width="700"
+              height="850"
+              loading="lazy"
+              class="h-[620px] w-full max-w-[520px] object-cover"
+            />
+          </div>
+
+          <!-- Decorative Icons -->
+          <img
+            src={section.decorations.smile}
+            alt="Smile"
+            class="absolute left-0 top-10 h-16 w-16 object-contain"
+          />
+
+          <img
+            src={section.decorations.house}
+            alt="House"
+            class="absolute right-5 top-12 h-14 w-14 object-contain"
+          />
+
+          <img
+            src={section.decorations.arrow}
+            alt="Arrow"
+            class="absolute bottom-28 left-[-20px] h-24 w-24 object-contain"
+          />
+
+          <img
+            src={section.decorations.paperPlane}
+            alt="Paper Plane"
+            class="absolute bottom-14 right-0 h-24 w-24 object-contain"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

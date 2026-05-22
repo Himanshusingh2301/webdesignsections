@@ -1,0 +1,75 @@
+
+
+{
+  "aboutSection": {
+    "heading": {
+      "before": "About ",
+      "highlight": "Matic Car Care"
+    },
+
+    "subheading": "Your trusted automotive service partner with a commitment to excellence and customer satisfaction",
+
+    "content": {
+      "title": "Professional Car Care Since Day One",
+
+      "paragraphs": [
+        "At Matic Car Care, we understand that your vehicle is more than just transportation — it's your trusted companion on life's journey. Our expert team of certified technicians brings years of experience and passion for automotive excellence to every service.",
+
+        "From routine maintenance to complex repairs, we use only genuine parts and state-of-the-art equipment to ensure your car performs at its best. Our mission is to keep you driving safely while extending your vehicle's lifespan."
+      ]
+    },
+
+    "mission": {
+      "title": "Our Mission",
+
+      "description": "To provide exceptional automotive services that exceed customer expectations while building lasting relationships based on trust, quality, and reliability."
+    },
+
+    "values": {
+      "title": "Our Values",
+
+      "items": [
+        {
+          "label": "Quality",
+          "text": "We never compromise on service standards"
+        },
+
+        {
+          "label": "Trust",
+          "text": "Transparent pricing and honest recommendations"
+        },
+
+        {
+          "label": "Excellence",
+          "text": "Committed to continuous improvement and innovation"
+        }
+      ]
+    },
+
+    "stats": [
+      {
+        "number": "1000+",
+        "title": "Happy Customers",
+        "icon": "/icons/M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+      },
+
+      {
+        "number": "5000+",
+        "title": "Services Completed",
+        "icon": "/icons/tools.svg"
+      },
+
+      {
+        "number": "10+",
+        "title": "Years Experience",
+        "icon": "/icons/award.svg"
+      },
+
+      {
+        "number": "24/7",
+        "title": "Customer Support",
+        "icon": "/icons/clock.svg"
+      }
+    ]
+  }
+}

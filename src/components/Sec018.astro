@@ -1,0 +1,211 @@
+---
+// src/components/sections/GarageDoorPricingCombinedSection.astro
+
+import pricingContent from "../data/sec018.json";
+
+const pricing = pricingContent.garageDoorSection.pricing;
+const banner = pricingContent.garageDoorSection.banner;
+---
+
+<section class="bg-[#f3f4f6] py-16">
+
+  <div class="mx-auto w-[92%] max-w-[1800px]">
+
+    <!-- HERO -->
+    <div class="mx-auto mb-16 max-w-[1200px] text-center">
+
+      <p class="text-[15px] font-bold uppercase tracking-[3px] text-[#d40000]">
+        {pricing.subHeading}
+      </p>
+
+      <h2 class="mt-5 text-[64px] font-extrabold leading-[1.1] tracking-[-2px] text-[#1f2937]">
+        {pricing.heading}
+
+        <span class="text-[#d40000]">
+          {pricing.highlight}
+        </span>
+      </h2>
+
+      <p class="mx-auto mt-8 max-w-[980px] text-[20px] leading-[1.9] text-[#64748b]">
+        {pricing.description}
+      </p>
+    </div>
+
+    <!-- TOP GRID -->
+    <div class="grid items-start gap-10 xl:grid-cols-[1.9fr_0.9fr]">
+
+      <!-- LEFT -->
+      <div>
+
+        <!-- TITLE -->
+        <div class="mb-7 flex items-center gap-3">
+          <span class="text-[20px] text-[#d40000]">
+            ★
+          </span>
+
+          <h2 class="text-[28px] font-extrabold text-[#1f2937]">
+            {pricing.leftTitle}
+          </h2>
+        </div>
+
+        <!-- PRICE CARDS -->
+        <div class="space-y-5">
+
+          {pricing.priceCards.map((item) => (
+            <div
+              class={`relative flex h-[165px] items-center justify-between rounded-[24px] border bg-white px-8 shadow-sm ${
+                item.popular
+                  ? "border-[#efb3b3]"
+                  : "border-[#d9dde3]"
+              }`}
+            >
+
+              <!-- POPULAR -->
+              {item.popular && (
+                <div class="absolute right-0 top-0 flex h-[30px] items-center rounded-bl-[20px] rounded-tr-[24px] bg-[#d40000] px-6 text-[11px] font-bold uppercase tracking-[1px] text-white">
+                  MOST POPULAR
+                </div>
+              )}
+
+              <!-- LEFT CONTENT -->
+              <div>
+                <h3 class="text-[22px] font-extrabold text-[#1f2937]">
+                  {item.title}
+                </h3>
+
+                <p class="mt-4 text-[16px] text-[#64748b]">
+                  {item.materials}
+                </p>
+              </div>
+
+              <!-- RIGHT CONTENT -->
+              <div class="text-right">
+                <p class="text-[34px] font-extrabold tracking-[-1px] text-[#d40000]">
+                  {item.price}
+                </p>
+
+                <p class="mt-4 text-[15px] text-[#64748b]">
+                  {item.note}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+
+        <!-- TITLE -->
+        <h2 class="mb-7 text-[28px] font-extrabold text-[#1f2937]">
+          {pricing.rightTitle}
+        </h2>
+
+        <!-- INFO CARDS -->
+        <div class="space-y-5">
+
+          {pricing.infoCards.map((item) => (
+            <div class="flex h-[165px] flex-col justify-between rounded-[24px] border border-[#d9dde3] bg-white px-8 py-7 shadow-sm">
+
+              <!-- TOP -->
+              <div class="flex items-start justify-between gap-4">
+
+                <h3 class="text-[20px] font-extrabold text-[#1f2937]">
+                  {item.title}
+                </h3>
+
+                <div class="shrink-0 rounded-full bg-[#173a68] px-5 py-2 text-[13px] font-bold text-white">
+                  {item.badge}
+                </div>
+              </div>
+
+              <!-- DESC -->
+              <p class="text-[16px] leading-[1.8] text-[#64748b]">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM GRID -->
+   <!-- BOTTOM GRID -->
+<div class="mt-10 grid gap-8 xl:grid-cols-[1.9fr_0.9fr] items-start">
+
+  <!-- LEFT BLUE CARD -->
+  <div class="flex h-[240px] items-center justify-between rounded-[24px] bg-[#102d55] px-10 py-8">
+
+    <!-- LEFT CONTENT -->
+    <div>
+      <p class="text-[14px] font-bold uppercase tracking-[2px] text-[#9fb0c7]">
+        {banner.averageLabel}
+      </p>
+
+      <h3 class="mt-3 text-[58px] font-extrabold leading-none text-white">
+        {banner.price}
+      </h3>
+
+      <p class="mt-4 max-w-[620px] text-[16px] leading-[1.6] text-[#c0cad7]">
+        {banner.description}
+      </p>
+    </div>
+
+    <!-- BUTTON -->
+    <a
+      href={banner.button.link}
+      class="inline-flex h-[58px] items-center justify-center gap-3 rounded-[16px] bg-white px-9 text-[17px] font-bold uppercase text-[#d40000]"
+    >
+      <span class="text-[17px]">
+        ☎
+      </span>
+
+      {banner.button.label}
+    </a>
+  </div>
+
+  <!-- RIGHT GUARANTEE CARD -->
+  <div class="flex h-[240px] flex-col rounded-[24px] border border-[#efb3b3] bg-[#fff7f7] px-7 py-7">
+
+    <!-- TOP CONTENT -->
+    <div>
+      <h3 class="text-[20px] font-extrabold text-[#d40000]">
+        {banner.guaranteeTitle}
+      </h3>
+
+      <!-- LIST -->
+      <div class="mt-5 space-y-4">
+
+        {banner.guarantees.map((item) => (
+          <div class="flex items-center gap-3">
+
+            <!-- ICON -->
+            <div class="flex h-6 w-6 items-center justify-center rounded-full border border-[#d40000] text-[13px] text-[#d40000]">
+              ✓
+            </div>
+
+            <!-- TEXT -->
+            <p class="text-[16px] text-[#64748b]">
+              {item}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- BOTTOM LINK -->
+    <div class="mt-auto pt-5 text-center">
+      <a
+        href={banner.bottomLink.link}
+        class="inline-flex items-center gap-3 text-[18px] font-bold text-[#d40000]"
+      >
+        {banner.bottomLink.label}
+
+        <span>
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+</section>

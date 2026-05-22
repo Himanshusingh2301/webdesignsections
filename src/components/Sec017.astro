@@ -1,0 +1,123 @@
+---
+// src/components/sections/GarageDoorAboutSection.astro
+
+import content from "../data/sec017.json";
+
+const section = content.garageDoorAbout;
+---
+
+<section
+  class="bg-[#f3f4f6] py-16 lg:py-24"
+  aria-labelledby="garage-about-heading"
+>
+  <div
+    class="mx-auto grid max-w-[1450px] items-center gap-10 px-6 sm:px-10 lg:grid-cols-[0.9fr_0.8fr] lg:px-16"
+  >
+    
+    <!-- LEFT IMAGE -->
+    <div class="relative max-w-[680px]">
+      
+      <!-- IMAGE -->
+      <div class="overflow-hidden rounded-[14px]">
+        <img
+          src={section.image}
+          alt={section.imageAlt}
+          width="680"
+          height="520"
+          loading="lazy"
+          class="h-[500px] w-full object-cover"
+        />
+      </div>
+
+      <!-- EXPERIENCE BADGE -->
+      <div
+        class="absolute bottom-5 right-5 flex items-center gap-4 rounded-[14px] bg-[#d40000] px-6 py-5 shadow-xl"
+      >
+        <span
+          class="text-[42px] font-extrabold leading-none text-white"
+        >
+          {section.badge.number}
+        </span>
+
+        <div class="leading-[1.1]">
+          <p class="text-[14px] font-bold uppercase text-white">
+            {section.badge.textOne}
+          </p>
+
+          <p class="text-[14px] font-bold uppercase text-white">
+            {section.badge.textTwo}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="max-w-[700px]">
+
+      <!-- HEADING -->
+      <h2
+        id="garage-about-heading"
+        class="text-3xl font-extrabold uppercase leading-[1.05] tracking-[-2px] text-[#0b2341] sm:text-5xl lg:text-[42px]"
+      >
+        {section.heading}
+
+        <span class="text-[#d40000]">
+          {section.highlight}
+        </span>
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <p
+        class="mt-5 text-[15px] leading-[1.9] text-[black]"
+      >
+        {section.description}
+      </p>
+
+      <!-- FEATURES -->
+      <div class="mt-7 space-y-4">
+        {section.features.map((item) => (
+          <div class="flex items-start gap-4">
+
+            <!-- ICON -->
+            <div
+              class="flex h-7 w-7 items-center justify-center rounded-full border-2 border-[#d40000] text-[#d40000]"
+            >
+              ✓
+            </div>
+
+            <!-- TEXT -->
+            <p
+              class="text-[15px] font-semibold leading-[1.5] text-[#0b2341]"
+            >
+              {item}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="mt-10 flex flex-wrap gap-4">
+
+        <!-- PRIMARY BUTTON -->
+        <a
+          href={section.primaryButton.link}
+          class="inline-flex min-h-[58px] items-center justify-center rounded-[10px] bg-[#d40000] px-8 text-[16px] font-bold uppercase text-white transition duration-300 hover:bg-[#b30000]"
+        >
+          {section.primaryButton.label}
+        </a>
+
+        <!-- PHONE BUTTON -->
+        <a
+          href={`tel:${section.phoneButton.number}`}
+          class="inline-flex min-h-[58px] items-center justify-center gap-3 rounded-[10px] bg-[#173a68] px-7 text-[16px] font-bold text-white transition duration-300 hover:bg-[#102c50]"
+        >
+          <span class="text-[20px]">
+            ☎
+          </span>
+
+          {section.phoneButton.label}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

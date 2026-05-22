@@ -1,0 +1,25 @@
+{
+  "medicalSimple": {
+    "heading": "Healing starts here",
+    "contentBlocks": [
+      {
+        "title": "The right answers the first time",
+        "description": "Effective treatment depends on getting the right diagnosis. Our experts diagnose and treat the toughest medical challenges."
+      },
+      {
+        "title": "The world’s best hospital",
+        "description": "Mayo Clinic is the No. 1 hospital in the world according to Newsweek.",
+        "link": {
+          "label": "Learn more about our top-ranked specialties.",
+          "url": "/specialties"
+        }
+      }
+    ],
+    "button": {
+      "label": "Why choose Mayo Clinic",
+      "link": "/about"
+    },
+    "image": "https://assets.mayoclinic.org/content/dam/media/global/images/2023/12/28/healing-starts-here-MC11REJU-600x800.jpg",
+    "imageAlt": "Professional medical staff helping patient"
+  }
+}

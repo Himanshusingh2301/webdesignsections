@@ -1,0 +1,74 @@
+---
+// src/components/sections/InteriorTextSection.astro
+
+import content from "../data/sec014.json";
+
+const section = content.interiorTextSection;
+---
+
+<section
+  class="bg-[#f5f5f5] py-16 lg:py-24"
+  aria-labelledby="interior-text-heading"
+>
+  <div
+    class="mx-auto grid max-w-[1550px] items-center gap-16 px-6 sm:px-10 lg:grid-cols-2 lg:px-20"
+  >
+    
+    <!-- LEFT CONTENT -->
+    <div class="max-w-[590px]">
+      
+      <!-- HEADING -->
+      <h2
+        id="interior-text-heading"
+        class="text-[32px] leading-[1.08] tracking-[-2px] text-[#111827] sm:text-[58px] lg:text-[46px]"
+      >
+        {section.heading}
+
+        <span class="font-semibold text-[#111827]">
+          {section.highlight}
+        </span>
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <div
+        class="mt-6 space-y-4 text-[16px] leading-[1.75] text-black"
+      >
+        <p>
+          {section.descriptionOne}
+        </p>
+
+        <p>
+          {section.descriptionTwo}
+        </p>
+
+        <p>
+          {section.descriptionThree}
+        </p>
+      </div>
+
+      <!-- BUTTON -->
+      <div class="mt-14">
+        <a
+          href={section.button.link}
+          class="inline-flex items-center justify-center rounded-[4px] bg-[#f59e0b] px-10 py-5 text-[20px] font-medium text-white transition duration-300 hover:bg-[#db8f00]"
+        >
+          {section.button.label}
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="relative flex justify-end">
+      <div class="overflow-hidden rounded-[4px]">
+        <img
+          src={section.image}
+          alt={section.imageAlt}
+          width="620"
+          height="430"
+          loading="lazy"
+          class="h-[320px] w-full max-w-[620px] object-cover sm:h-[380px] lg:h-[430px]"
+        />
+      </div>
+    </div>
+  </div>
+</section>

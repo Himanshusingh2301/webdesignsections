@@ -1,0 +1,83 @@
+---
+// src/components/sections/CommitmentSection.astro
+
+import content from "../data/sec011.json";
+
+const section = content.commitmentSection;
+---
+
+<section class="relative overflow-hidden bg-[#f7f7f7] pt-14">
+  <!-- Top Content -->
+  <div class="mx-auto max-w-[1100px] px-4 text-center">
+    
+    <!-- Small Heading -->
+    <span class="font-[cursive] text-[24px] text-[#5d7f72]">
+      {section.subHeading}
+    </span>
+
+    <!-- Main Heading -->
+    <h2
+      class="mt-2 text-4xl font-bold leading-tight text-[#004d57] md:text-6xl"
+    >
+      {section.heading}
+    </h2>
+
+    <!-- Description -->
+    <p
+      class="mx-auto mt-5 max-w-[1200px] text-[15px] leading-[1.9] text-[#858b93]"
+    >
+      {section.description}
+    </p>
+  </div>
+
+  <!-- Bottom Background -->
+  <div class="relative mt-14">
+    <img
+      src={section.backgroundImage}
+      alt="Healthcare"
+      class="h-[220px] w-full object-cover"
+    />
+
+    <!-- Stats Card -->
+    <div
+      class="absolute left-1/2 top-[-60px] w-[75%] -translate-x-1/2 rounded-b-[70px] bg-[#f7f7f7] px-10 py-12 shadow-[0_10px_30px_rgba(0,0,0,0.06)]"
+    >
+      <div class="grid gap-10 lg:grid-cols-3">
+        {section.stats.map((item) => (
+          <div class="flex items-start gap-4">
+            
+            <!-- Icon -->
+            <div
+              class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-[4px] border-[#b6eef5]"
+            >
+              <img
+                src={item.icon}
+                alt={item.title}
+                class="h-8 w-8 object-contain"
+              />
+            </div>
+
+            <!-- Content -->
+            <div>
+              <span class="text-4xl font-bold text-[#4e705e]">
+                {item.number}
+              </span>
+
+              <h3
+                class="mt-1 text-[18px] font-semibold text-[#004d57]"
+              >
+                {item.title}
+              </h3>
+
+              <p
+                class="mt-3 max-w-[260px] text-[14px] leading-[1.8] text-[#858b93]"
+              >
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
