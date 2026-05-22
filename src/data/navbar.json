@@ -5,26 +5,57 @@
   },
   "links": [
     {
-      "label": "About Us",
-      "href": "/about",
+      "label": "Home",
+      "href": "/",
       "dropdown": null
     },
     {
-      "label": "Solutions",
-      "href": "/solutions",
+      "label": "Sections",
+      "href": "/sections",
       "dropdown": [
-        { "label": "Water Management", "href": "/solutions/water-management" },
-        { "label": "Leak Detection", "href": "/solutions/leak-detection" },
-        { "label": "Smart Monitoring", "href": "/solutions/smart-monitoring" }
+        {
+          "label": "Hero Sections",
+          "href": "/sections/hero"
+        },
+        {
+          "label": "Navbars",
+          "href": "/sections/navbar"
+        },
+        {
+          "label": "Why Choose Us",
+          "href": "/sections/why-choose-us"
+        },
+        {
+          "label": "Catalogs",
+          "href": "/sections/catalogs"
+        },
+        {
+          "label": "Testimonials",
+          "href": "/sections/testimonials"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/sections/contact-us"
+        },
+        {
+          "label": "FAQ",
+          "href": "/sections/faq"
+        }
       ]
     },
     {
-      "label": "Explore",
-      "href": "/explore",
+      "label": "Websites",
+      "href": "/websites",
       "dropdown": [
-        { "label": "Use Cases", "href": "/explore/use-cases" },
-        { "label": "Articles & News", "href": "/explore/articles-news" },
-        { "label": "Case Studies", "href": "/explore/case-studies" }
+        {
+          "label": "Interior design",
+          "href": "/websites/interior-design"
+        },
+        {
+          "label": "Clinics",
+          "href": "/websites/clinics"
+        }
+       
       ]
     }
   ],

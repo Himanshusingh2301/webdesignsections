@@ -1,0 +1,91 @@
+{
+  "interiorPricingComparison": {
+    "headingBold": "Interior Design Cost",
+    "headingLight": " In Jaipur — Transparent Pricing",
+    "subheading": "Here’s what makes working with us different:",
+
+    "columnOne": "InspireSpaces Experience",
+    "columnTwo": "Typical Experience",
+
+    "rows": [
+      {
+        "title": "PRICE",
+        "good": [
+          "No hidden costs",
+          "Price Match Guarantee"
+        ],
+        "bad": [
+          "45% hike between first quote and final cost"
+        ]
+      },
+
+      {
+        "title": "ACCESSIBILITY",
+        "good": [
+          "A collective unit for all interior solutions"
+        ],
+        "bad": [
+          "Switching shops from one to another."
+        ]
+      },
+
+      {
+        "title": "DESIGN",
+        "good": [
+          "3D visual with customised design"
+        ],
+        "bad": [
+          "2D design visual cut-outs"
+        ]
+      },
+
+      {
+        "title": "DURATION",
+        "good": [
+          "45-day installation",
+          "Step by step update"
+        ],
+        "bad": [
+          "Non reliable",
+          "Delays and weak updates"
+        ]
+      },
+
+      {
+        "title": "QUALITY",
+        "good": [
+          "High-quality material",
+          "Several quality checks",
+          "Complete in-house team"
+        ],
+        "bad": [
+          "Low quality products",
+          "No quality checks",
+          "Outsourcing small suppliers"
+        ]
+      },
+
+      {
+        "title": "WARRANTY",
+        "good": [
+          "11-year warranty",
+          "Assured on site service warranty"
+        ],
+        "bad": [
+          "No guarantee or Warranty",
+          "No after sales support"
+        ]
+      },
+
+      {
+        "title": "AFTER SALES SUPPORT",
+        "good": [
+          "Trained and highly professional support team"
+        ],
+        "bad": [
+          "No support"
+        ]
+      }
+    ]
+  }
+}

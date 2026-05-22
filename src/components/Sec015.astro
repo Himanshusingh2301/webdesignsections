@@ -7,16 +7,19 @@ const section = content.interiorWhyChoose;
 ---
 
 <section
-  class="bg-[#f5f5f5] py-16 lg:py-24"
+  class="relative overflow-hidden bg-[#f5f5f5] py-16 lg:py-24"
   aria-labelledby="why-choose-heading"
 >
-  <div class="mx-auto max-w-[1450px] px-6 sm:px-10 lg:px-16">
+  <!-- soft bg effect -->
+  <div class="absolute left-0 top-0 h-[260px] w-[260px] rounded-full bg-white blur-3xl opacity-60"></div>
+
+  <div class="relative mx-auto max-w-[1450px] px-6 sm:px-10 lg:px-16">
 
     <!-- HEADING -->
     <div class="mx-auto max-w-[820px] text-center">
       <h2
         id="why-choose-heading"
-        class="text-3xl leading-[1.08] tracking-[-2px] text-[#111827] sm:text-5xl lg:text-[58px]"
+        class="text-3xl font-light leading-[1.08] tracking-[-2px] text-[#111827] sm:text-5xl lg:text-[58px]"
       >
         {section.heading}
 
@@ -25,60 +28,91 @@ const section = content.interiorWhyChoose;
         </span>
       </h2>
 
+      <p class="mx-auto mt-5 max-w-[680px] text-[16px] leading-[1.8] text-[#555]">
+        We design elegant and functional interiors that blend comfort,
+        creativity, and timeless aesthetics for modern living.
+      </p>
+
       <!-- UNDERLINE -->
-      <div class="mx-auto mt-6 h-[2px] w-[220px] bg-[#111827]"></div>
+      <div class="mx-auto mt-7 h-[3px] w-[170px] rounded-full bg-[#111827]"></div>
     </div>
 
     <!-- CONTENT -->
     <div
-      class="mt-16 grid items-start gap-10 lg:grid-cols-[1.08fr_0.92fr]"
+      class="mt-20 grid items-start gap-12 lg:grid-cols-[1.08fr_0.92fr]"
     >
       
       <!-- LEFT IMAGE -->
-      <div class="overflow-hidden lg:mt-10">
+      <div class="group relative overflow-hidden rounded-[10px]">
+        
+        <!-- image -->
         <img
           src={section.image}
           alt={section.imageAlt}
           width="850"
           height="620"
           loading="lazy"
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
         />
+
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+
+        <!-- floating tag -->
+        <div class="absolute bottom-6 left-6 rounded-full bg-white/95 px-5 py-3 shadow-xl backdrop-blur-md">
+          <span class="text-[14px] font-medium tracking-wide text-[#111827]">
+            Premium Interior Experience
+          </span>
+        </div>
       </div>
 
       <!-- RIGHT FEATURES -->
-      <div>
+      <div class="rounded-[10px] bg-white p-2 shadow-[0_10px_40px_rgba(0,0,0,0.04)]">
         
         {section.features.map((item, index) => (
-          <div class="border-b border-[#dddddd] py-7">
+          <div
+            class={`group border-b border-[#e5e5e5] px-5 py-7 transition-all duration-300 hover:bg-[#fafafa] ${
+              index === section.features.length - 1
+                ? "border-b-0"
+                : ""
+            }`}
+          >
             
             <!-- TITLE -->
-            <div
-              class="flex items-center gap-4"
-            >
-              <span class="text-[20px] leading-none text-[#222]">
-                →
-              </span>
-
-              <h3
-                class="text-[18px] font-semibold leading-[1.4] text-[#2a2a2a] lg:text-[20px]"
+            <div class="flex items-start gap-4">
+              
+              <!-- icon -->
+              <div
+                class={`mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-[18px] transition-all duration-300 ${
+                  index === 0
+                    ? "bg-[#111827] text-white"
+                    : "bg-[#f3f4f6] text-[#111827] group-hover:bg-[#111827] group-hover:text-white"
+                }`}
               >
-                {item.title}
-              </h3>
-            </div>
-
-            <!-- FIRST ACTIVE DESCRIPTION -->
-            {index === 0 && (
-              <div class="pt-4 pl-9">
-                <p
-                  class="max-w-[540px] text-[16px] leading-[1.4] text-[#333333]"
-                >
-                  {item.description}
-                </p>
+                →
               </div>
-            )}
+
+              <!-- text -->
+              <div class="flex-1">
+                <h3
+                  class="text-[19px] font-semibold leading-[1.4] text-[#1f2937] lg:text-[21px]"
+                >
+                  {item.title}
+                </h3>
+
+                <!-- FIRST ACTIVE DESCRIPTION -->
+                {index === 0 && (
+                  <p
+                    class="mt-4 max-w-[540px] text-[16px] leading-[1.8] text-[#555]"
+                  >
+                    {item.description}
+                  </p>
+                )}
+              </div>
+            </div>
           </div>
         ))}
+
       </div>
     </div>
   </div>
