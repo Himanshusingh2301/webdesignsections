@@ -1,0 +1,30 @@
+{
+  "additionalInteriorServices": {
+    "services": [
+      {
+        "title": "False Ceiling Design",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/83/ce/f1/83cef1f0a93ec982d892fd0b22085d29.jpg",
+        "link": "/false-ceiling-design"
+      },
+      {
+        "title": "Wallpaper Interior Services",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/32/18/46/321846f262a94eae9e8b6505d5daa7c3.jpg",
+        "link": "/wallpaper-interior-services"
+      },
+      {
+        "title": "Pooja Room Design",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/3f/72/b6/3f72b67e637223c86fedb7bf967073da.jpg",
+        "link": "/pooja-room-design"
+      },
+      {
+        "title": "Wardrobe & Storage Solutions",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/32/da/ed/32daed9436740f952c86e22455b8d0d2.jpg",
+        "link": "/wardrobe-storage-solutions"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+---
+// src/components/sections/OurProcessSection.astro
+
+import content from "../data/sec020.json";
+
+const section = content.ourProcess;
+---
+
+<section class="bg-[#f5f5f5] py-10 lg:py-14">
+  <div class="mx-auto w-[92%] max-w-[1600px]">
+
+    <!-- TOP SECTION -->
+    <div
+      class="grid gap-5 border border-[#e5e7eb] bg-[#e9edf1] px-6 py-7 lg:grid-cols-3 lg:items-center lg:px-12"
+    >
+
+      <!-- LEFT -->
+      <div>
+        <h2
+          class="text-3xl font-bold tracking-tight text-[#111827] lg:text-5xl"
+        >
+          {section.heading}
+        </h2>
+      </div>
+
+      <!-- CENTER -->
+      <div>
+        <p
+          class="max-w-[620px] text-base leading-[1.7] text-[#1f2937] lg:text-[22px]"
+        >
+          {section.description}
+        </p>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="flex justify-start lg:justify-center">
+        <a
+          href={section.button.link}
+          class="inline-flex items-center justify-center rounded-sm bg-[#f59e0b] px-7 py-3 text-[15px] font-medium text-white transition duration-300 hover:bg-[#d97706]"
+        >
+          {section.button.text}
+        </a>
+      </div>
+    </div>
+
+    <!-- PROCESS CARDS -->
+    <div class="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+      {
+        section.steps.map((item) => (
+          <div
+            class="flex min-h-[220px] flex-col items-center justify-center border border-[#ececec] bg-[#edf1f4] px-5 py-6 text-center"
+          >
+            <span
+              class="mb-2 text-5xl font-light leading-none text-[#4b5563]"
+            >
+              {item.number}
+            </span>
+
+            <h3
+              class="mb-2 text-[20px] font-semibold leading-snug text-[#111827]"
+            >
+              {item.title}
+            </h3>
+
+            <p
+              class="max-w-[400px] text-[15px] leading-[1.7] text-[#374151]"
+            >
+              {item.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+
+  </div>
+</section>

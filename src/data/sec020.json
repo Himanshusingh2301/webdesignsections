@@ -1,0 +1,42 @@
+{
+  "ourProcess": {
+    "heading": "Our Process",
+    "description": "From completed homes to modular kitchens, and storage to decor, our top interior designers create spaces that match your vision.",
+    "button": {
+      "text": "Learn More",
+      "link": "/contact"
+    },
+    "steps": [
+      {
+        "number": "1",
+        "title": "Consultation",
+        "description": "From completed homes to modular kitchens, and storage to decor, our top interior designers create spaces that match your vision."
+      },
+      {
+        "number": "2",
+        "title": "Budgeting",
+        "description": "Our top interior designers spearhead quality assurance by extending support after the execution of home projects."
+      },
+      {
+        "number": "3",
+        "title": "Planning",
+        "description": "Our top interior designers spearhead quality assurance by extending support after the execution of home projects."
+      },
+      {
+        "number": "4",
+        "title": "Concept Design – 3d Visualisation",
+        "description": "Creative layouts and realistic visualisation help you understand the final outcome before execution begins."
+      },
+      {
+        "number": "5",
+        "title": "Execution – Site work",
+        "description": "Our skilled team manages execution efficiently with high-quality materials and timely delivery."
+      },
+      {
+        "number": "6",
+        "title": "Project Completion – Handover",
+        "description": "We ensure smooth project completion and handover with complete client satisfaction and support."
+      }
+    ]
+  }
+}

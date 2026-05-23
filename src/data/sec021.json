@@ -1,0 +1,32 @@
+{
+  "interiorServices": {
+    "heading": "Interior Design Services In Jaipur",
+    "subheading": "Residential Interior Design Solutions",
+    "services": [
+      {
+        "title": "Living Room Design",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/13/b0/57/13b057820976573ff8139b986789d632.jpg",
+        "link": "/living-room-design"
+      },
+      {
+        "title": "Bedroom Design",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/42/e8/1c/42e81c8b8b47d627b1b29a3043f5a65c.jpg",
+        "link": "/bedroom-design"
+      },
+      {
+        "title": "Modular Kitchen Design",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/0f/16/ec/0f16ecf52726ca45849180507f88a9bc.jpg",
+        "link": "/modular-kitchen-design"
+      },
+      {
+        "title": "Bathroom Design",
+        "description": "A holy city famous for the only Brahma Temple in the world and the sacred Pushkar Lake.",
+        "image": "https://i.pinimg.com/736x/ba/45/4c/ba454cc58488c9fafe7e6b73d359fa98.jpg",
+        "link": "/bathroom-design"
+      }
+    ]
+  }
+}

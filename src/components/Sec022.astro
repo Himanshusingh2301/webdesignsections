@@ -1,0 +1,60 @@
+---
+// src/components/sections/AdditionalInteriorServices.astro
+
+import content from "../data/sec022.json";
+
+const section = content.additionalInteriorServices;
+---
+
+<section class="bg-[#f5f5f5] py-10 lg:py-14">
+  <div class="mx-auto w-[94%] max-w-[1650px]">
+
+    <!-- SERVICES -->
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      {
+        section.services.map((item) => (
+          <div class="group">
+
+            <!-- IMAGE -->
+            <div class="overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.title}
+                class="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <!-- CONTENT -->
+            <div class="pt-5">
+
+              <!-- TITLE + BUTTON -->
+              <div class="flex items-start justify-between gap-3">
+                <h3
+                  class="text-[22px] font-semibold leading-snug text-[#111827]"
+                >
+                  {item.title}
+                </h3>
+
+                <a
+                  href={item.link}
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#111827] text-lg text-white transition duration-300 hover:bg-[#f59e0b]"
+                >
+                  →
+                </a>
+              </div>
+
+              <!-- DESCRIPTION -->
+              <p
+                class="mt-3 text-[16px] leading-[1.7] text-[#374151]"
+              >
+                {item.description}
+              </p>
+
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+  </div>
+</section>

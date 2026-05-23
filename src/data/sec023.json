@@ -1,0 +1,25 @@
+{
+  "commercialInterior": {
+    "heading": "Commercial Interior Design Solutions",
+    "services": [
+      {
+        "title": "Retail Shop Interior Design",
+        "description": "Design professional workspaces that boost productivity. We create reception areas, workstations, conference rooms, and modern office layouts.",
+        "image": "https://i.pinimg.com/1200x/0f/52/b2/0f52b2f9f52741849c144e3fb86eb65d.jpg",
+        "link": "/retail-shop-interior-design"
+      },
+      {
+        "title": "False Ceiling Design",
+        "description": "Design professional workspaces that boost productivity. We create reception areas, workstations, conference rooms, and modern office layouts.",
+        "image": "https://i.pinimg.com/736x/b7/33/67/b733678bed881c714d75a34de62d2a1c.jpg",
+        "link": "/false-ceiling-design"
+      },
+      {
+        "title": "Clinic Interior Design",
+        "description": "Design professional workspaces that boost productivity. We create reception areas, workstations, conference rooms, and modern office layouts.",
+        "image": "https://i.pinimg.com/736x/70/a6/a3/70a6a3edc3c9f688f9bae34bfc7dc8ac.jpg",
+        "link": "/clinic-interior-design"
+      }
+    ]
+  }
+}
