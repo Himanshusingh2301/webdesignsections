@@ -1,0 +1,68 @@
+---
+// src/components/sections/AboutHomeDesigning.astro
+
+import content from "../data/sec028.json";
+
+const section = content.aboutHomeDesigning;
+---
+
+<section class="bg-[#f5f5f5] py-8 lg:py-10">
+  <div
+    class="mx-auto grid w-[92%] max-w-[1500px] gap-8 lg:grid-cols-2 lg:items-center"
+  >
+
+    <!-- LEFT CONTENT -->
+    <div class="max-w-[700px]">
+
+      <!-- HEADING -->
+      <h2
+        class="text-3xl  tracking-tight text-[#1f2937] lg:text-[46px]"
+      >
+        {section.heading}
+      </h2>
+
+      <!-- PARAGRAPH 1 -->
+      <p
+        class="mt-6 text-[16px] leading-[1.8] text-[#374151]"
+      >
+        {section.descriptionOne}
+      </p>
+
+      <!-- PARAGRAPH 2 -->
+      <p
+        class="mt-6 text-[16px] leading-[1.8] text-[#374151]"
+      >
+        {section.descriptionTwo.before}
+
+        <span class="font-bold text-[#111827]">
+          {section.descriptionTwo.highlightOne}
+        </span>
+
+        {section.descriptionTwo.middle}
+
+        <span class="font-bold text-[#111827]">
+          {section.descriptionTwo.highlightTwo}
+        </span>
+
+        {section.descriptionTwo.middleTwo}
+
+        <span class="font-bold text-[#111827]">
+          {section.descriptionTwo.highlightThree}
+        </span>
+
+        {section.descriptionTwo.after}
+      </p>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="overflow-hidden rounded-[24px]">
+      <img
+        src={section.image}
+        alt={section.heading}
+        class="h-[620px] w-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>

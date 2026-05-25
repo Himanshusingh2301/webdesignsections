@@ -35,7 +35,7 @@ const section = content.interiorServices;
           <div class="group">
 
             <!-- IMAGE -->
-            <div class="overflow-hidden">
+            <div class="overflow-hidden rounded-[6px]">
               <img
                 src={item.image}
                 alt={item.title}
@@ -46,21 +46,12 @@ const section = content.interiorServices;
             <!-- CONTENT -->
             <div class="pt-4">
 
-              <!-- TITLE + ICON -->
-              <div class="flex items-start justify-between gap-3">
-                <h3
-                  class="text-[22px] font-semibold leading-snug text-[#111827]"
-                >
-                  {item.title}
-                </h3>
-
-                <a
-                  href={item.link}
-                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#111827] text-lg text-white transition duration-300 hover:bg-[#f59e0b]"
-                >
-                  →
-                </a>
-              </div>
+              <!-- TITLE -->
+              <h3
+                class="text-[22px] font-semibold leading-snug text-[#111827]"
+              >
+                {item.title}
+              </h3>
 
               <!-- DESCRIPTION -->
               <p

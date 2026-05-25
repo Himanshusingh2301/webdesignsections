@@ -1,0 +1,43 @@
+{
+  "bespokeInteriorServices": {
+    "heading": "Bespoke Interior Design Service",
+
+    "services": [
+      {
+        "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+
+        "title": "Design only Package",
+
+        "description": "From completed homes to modular kitchens, and storage to decor, our top interior designers create spaces that perfectly match your vision and lifestyle.",
+
+        "buttonText": "Book Free Consultation",
+
+        "link": "/contact"
+      },
+
+      {
+        "icon": "https://cdn-icons-png.flaticon.com/512/1048/1048953.png",
+
+        "title": "Design and Consultancy Package",
+
+        "description": "Get expert guidance for layouts, materials, furniture, and decor with personalized consultancy from experienced interior designers.",
+
+        "buttonText": "Book Free Consultation",
+
+        "link": "/contact"
+      },
+
+      {
+        "icon": "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+
+        "title": "Turnkey Execution Package",
+
+        "description": "Complete end-to-end interior execution with premium finishes, site supervision, and hassle-free project management services.",
+
+        "buttonText": "Book Free Consultation",
+
+        "link": "/contact"
+      }
+    ]
+  }
+}

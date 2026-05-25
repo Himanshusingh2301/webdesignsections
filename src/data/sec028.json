@@ -1,0 +1,19 @@
+{
+  "aboutHomeDesigning": {
+    "heading": "About Home Designing",
+
+    "image": "https://i.pinimg.com/736x/5e/ed/3e/5eed3e4184732ec62dd4df32dd216e6c.jpg",
+
+    "descriptionOne": "At Home Designing, we believe in making design both inspiring and accessible. Our platform is dedicated to sharing ideas that help you visualize your space, discover new products, and turn inspiration into action, making it easier to create a home that truly reflects you.",
+
+    "descriptionTwo": {
+      "before": "Our blog opens doors to stunning homes worldwide with ",
+      "highlightOne": "Home Tours",
+      "middle": " that inspire unique interiors. Discover our ",
+      "highlightTwo": "Product Features",
+      "middleTwo": " highlighting top décor and furniture picks, and browse ",
+      "highlightThree": "Pre-Styled Rooms",
+      "after": " for complete, ready-to-recreate looks."
+    }
+  }
+}

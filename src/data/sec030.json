@@ -1,0 +1,85 @@
+{
+  "sampleDesigns": {
+    "heading": "Our Sample Designs",
+
+    "designs": [
+      {
+        "title": "Living Room",
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
+        "link": "/living-room"
+      },
+
+      {
+        "title": "Modern Interior",
+        "image": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?q=80&w=1200&auto=format&fit=crop",
+        "link": "/modern-interior"
+      },
+
+      {
+        "title": "Furniture",
+        "image": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1200&auto=format&fit=crop",
+        "link": "/furniture"
+      },
+
+      {
+        "title": "Bathroom Design",
+        "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1200&auto=format&fit=crop",
+        "link": "/bathroom-design"
+      },
+
+      {
+        "title": "Kitchen Remodeling",
+        "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop",
+        "link": "/kitchen-remodeling"
+      },
+
+      {
+        "title": "Wallpaper Design",
+        "image": "https://i.pinimg.com/736x/cc/95/76/cc9576471a623cbbcf55048ec35e9615.jpg",
+        "link": "/wallpaper-design"
+      }
+    ]
+  },
+
+  "interiorPortfolio": {
+    "heading": "Interior Portfolio",
+
+    "designs": [
+      {
+        "title": "Office Interior Design",
+        "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop",
+        "link": "/office-interior"
+      },
+
+      {
+        "title": "TV Unit",
+        "image": "https://i.pinimg.com/736x/1c/6b/1b/1c6b1b5b52154c3a7c0b68d280e27aa6.jpg",
+        "link": "/tv-unit"
+      },
+
+      {
+        "title": "Luxury Bedroom",
+        "image": "https://i.pinimg.com/736x/42/e8/1c/42e81c8b8b47d627b1b29a3043f5a65c.jpg",
+        "link": "/luxury-bedroom"
+      },
+
+      {
+        "title": "Kitchen Remodeling",
+        "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1200&auto=format&fit=crop",
+        "link": "/kitchen-remodeling"
+      },
+
+      {
+        "title": "False Ceiling",
+        "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop",
+        "link": "/false-ceiling"
+      },
+
+      {
+        "title": "Bedroom",
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
+        "link": "/bedroom"
+      }
+    ]
+  }
+}

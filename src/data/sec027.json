@@ -1,0 +1,12 @@
+{
+  "consultationBanner": {
+    "image": "https://i.pinimg.com/736x/a2/92/b6/a292b62f23edcbd3fff81ef7b914cb8c.jpg",
+
+    "heading": "Think you can't afford beautiful interior design? Think again.",
+
+    "button": {
+      "text": "Schedule A Consultation",
+      "link": "/contact"
+    }
+  }
+}

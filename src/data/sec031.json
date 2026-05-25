@@ -1,0 +1,31 @@
+
+
+{
+  "contactSection": {
+    "heading": "Contact Us",
+
+    "buttonText": "Submit Now",
+
+    "mapUrl": "https://maps.google.com/maps?q=Jaipur&t=&z=11&ie=UTF8&iwloc=&output=embed",
+
+    "socialLinks": [
+      {
+        "icon": "f",
+        "bg": "bg-[#1877f2]",
+        "link": "https://facebook.com"
+      },
+
+      {
+        "icon": "◎",
+        "bg": "bg-[#e1306c]",
+        "link": "https://instagram.com"
+      },
+
+      {
+        "icon": "𝕏",
+        "bg": "bg-black",
+        "link": "https://x.com"
+      }
+    ]
+  }
+}

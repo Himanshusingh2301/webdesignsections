@@ -1,0 +1,133 @@
+---
+// src/components/sections/DesignGallerySection.astro
+
+import sampleContent from "../data/sec030.json";
+
+const sampleSection = sampleContent.sampleDesigns;
+const portfolioSection = sampleContent.interiorPortfolio;
+---
+
+<section class="bg-[#f5f5f5] py-8 lg:py-10">
+
+  <div class="mx-auto w-[90%] max-w-[1350px]">
+
+    <!-- ========================= -->
+    <!-- SAMPLE DESIGNS -->
+    <!-- ========================= -->
+
+    <div class="mb-10 text-center">
+
+      <h2
+        class="text-3xl font-bold tracking-tight text-[#111827] lg:text-5xl"
+      >
+        {sampleSection.heading}
+      </h2>
+
+      <div
+        class="mx-auto mt-4 h-[2px] w-[220px] bg-[#374151]"
+      ></div>
+
+    </div>
+
+    <!-- SAMPLE GRID -->
+    <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+
+      {
+        sampleSection.designs.map((item) => (
+          <a
+            href={item.link}
+            class="group relative overflow-hidden rounded-[4px]"
+          >
+
+            <!-- IMAGE -->
+            <img
+              src={item.image}
+              alt={item.title}
+              class="h-[280px] w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <!-- OVERLAY -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"
+            ></div>
+
+            <!-- TITLE -->
+            <div
+              class="absolute bottom-4 left-1/2 w-full -translate-x-1/2 px-4 text-center"
+            >
+              <h3
+                class="text-[20px] font-semibold text-white lg:text-[24px]"
+              >
+                {item.title}
+              </h3>
+            </div>
+
+          </a>
+        ))
+      }
+
+    </div>
+
+    <!-- SPACE -->
+    <div class="h-12 lg:h-16"></div>
+
+    <!-- ========================= -->
+    <!-- INTERIOR PORTFOLIO -->
+    <!-- ========================= -->
+
+    <div class="mb-10 text-center">
+
+      <h2
+        class="text-3xl font-bold tracking-tight text-[#111827] lg:text-5xl"
+      >
+        {portfolioSection.heading}
+      </h2>
+
+      <div
+        class="mx-auto mt-4 h-[2px] w-[210px] bg-[#374151]"
+      ></div>
+
+    </div>
+
+    <!-- PORTFOLIO GRID -->
+    <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+
+      {
+        portfolioSection.designs.map((item) => (
+          <a
+            href={item.link}
+            class="group relative overflow-hidden rounded-[4px]"
+          >
+
+            <!-- IMAGE -->
+            <img
+              src={item.image}
+              alt={item.title}
+              class="h-[290px] w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+
+            <!-- OVERLAY -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"
+            ></div>
+
+            <!-- TITLE -->
+            <div
+              class="absolute bottom-4 left-1/2 w-full -translate-x-1/2 px-4 text-center"
+            >
+              <h3
+                class="text-[20px] font-semibold capitalize text-white lg:text-[24px]"
+              >
+                {item.title}
+              </h3>
+            </div>
+
+          </a>
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>

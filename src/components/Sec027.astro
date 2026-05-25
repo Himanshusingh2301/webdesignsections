@@ -1,0 +1,48 @@
+---
+// src/components/sections/ConsultationBanner.astro
+
+import content from "../data/sec027.json";
+
+const section = content.consultationBanner;
+---
+
+<section class="bg-[#f5f5f5] py-8 lg:py-12">
+  <div class="mx-auto grid w-[95%] max-w-[1800px] overflow-hidden bg-[#efefef] lg:grid-cols-2">
+
+    <!-- IMAGE -->
+    <div class="relative">
+      <img
+        src={section.image}
+        alt={section.heading}
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <!-- CONTENT -->
+    <div
+      class="flex items-center justify-center px-8 py-16 lg:px-20"
+    >
+      <div class="max-w-[520px] text-center">
+
+        <!-- HEADING -->
+        <h2
+          class="text-4xl font-light leading-[1.4] tracking-wide text-[#2f2b2b] lg:text-[46px]"
+        >
+          {section.heading}
+        </h2>
+
+        <!-- BUTTON -->
+        <div class="mt-10">
+          <a
+            href={section.button.link}
+            class="inline-flex min-w-[420px] items-center justify-center rounded-[10px] bg-[#d2c18f] px-10 py-5 text-[20px] font-semibold uppercase tracking-[2px] text-[#111111] transition duration-300 hover:bg-[#bda96e]"
+          >
+            {section.button.text}
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

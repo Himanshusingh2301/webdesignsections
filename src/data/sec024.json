@@ -1,0 +1,28 @@
+{
+  "budgetHomes": {
+    "heading": "Homes for every budget",
+    "description": "Our interior designers work with you keeping in mind your requirements and budget",
+    "button": {
+      "text": "GET FREE QUOTE",
+      "link": "/contact"
+    },
+    "footerText": "*The prices include only modular interiors for new homes.",
+    "homes": [
+      {
+        "title": "2BHK",
+        "price": "Starting at 3.57L*",
+        "image": "https://i.pinimg.com/736x/6a/c9/d5/6ac9d5280c926005fb1619a06a22ffd3.jpg"
+      },
+      {
+        "title": "3BHK",
+        "price": "Starting at 4.23L*",
+        "image": "https://i.pinimg.com/736x/e5/ee/63/e5ee63b2754e073c3f9cf5558d6fb564.jpg"
+      },
+      {
+        "title": "4BHK",
+        "price": "Starting at 4.81L*",
+        "image": "https://i.pinimg.com/736x/09/0f/49/090f493ed4b071917fe71ccd13318b76.jpg"
+      }
+    ]
+  }
+}
